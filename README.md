@@ -19,12 +19,15 @@ Split DNS -технология с разделенным представлен
 * присвоить имена в зоне dns.lab:    
 client 192.168.50.15 --web1    
 client2 192.168.50.16  --web2   
-* присвоить имена в зоне newdns.lab:   
-client www.newdns.lab
+* присвоить имена в зоне newdns.lab:		
+client www.newdns.lab		
 client2 www.newdns.lab    
 
 * client - видит зоны dns.lab,newdns.lab но в зоне dns.lab только web1    
-* client2 видит только dns.lab    
+* client2 видит только dns.lab		
+
+
+![sheme](https://github.com/Hanafeevrus/Bind_split_dns/blob/master/sheme.png)
 ##### Реализация    
 необходимо в `named.conf` указать ACL на основании которых будут предоставляться `view` (виды) для просмотра зон.   
 Ниже представлен фрагмент для client:   
