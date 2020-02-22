@@ -14,8 +14,8 @@ DNS обслуживает прямые и обратные зоны:
 Основные конфигурационные файлы master и slave bind named.conf [ns01](https://github.com/Hanafeevrus/Bind_split_dns/blob/master/provisioning/master-named.conf) и [ns02](https://github.com/Hanafeevrus/Bind_split_dns/blob/master/provisioning/slave-named.conf)    
 Зоны описаны в файлах `named.*`, которые хранятся на DNS в директории /etc/named/.
 ##### Настройка split dns  
-Split DNS -технология с разделенным представлением DNS    
-Задача    
+Split DNS -технология с разделенным представлением DNS. [Описание](http://it2web.ru/index.php/dns/77-split-dns-nauchim-bind-rabotat-na-dva-tri-chetyre-i-bolee-frontov)		
+##### Задача    
 * присвоить имена в зоне dns.lab:    
 client 192.168.50.15 --web1    
 client2 192.168.50.16  --web2   
